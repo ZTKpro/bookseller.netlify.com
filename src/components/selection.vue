@@ -50,6 +50,66 @@
           </div>
           <p>Ponad słowami podręcznik klasa 1 CZ. 1 NOWA ERA</p>
         </div>
+        <div :class="{ box_bookactive : ie = ie % 2 }" @click="ie += 1" class="box_book">
+          <div class="book_imgwrap">
+            <img src="https://a.allegroimg.com/s360/0385bd/90d9dae842e38c2afde514766cfa" alt />
+          </div>
+          <p>Informatyka Europejczyka Podręcznik z płytą CD</p>
+        </div>
+        <div :class="{ box_bookactive : sf = sf % 2 }" @click="sf += 1" class="box_book">
+          <div class="book_imgwrap">
+            <img src="https://a.allegroimg.com/s360/03cb39/784c6d604149a34f395a3c14b1e9" alt />
+          </div>
+          <p>Świat fizyki Podręcznik. Zakres podstawowy</p>
+        </div>
+        <div :class="{ box_bookactive : wok = wok % 2 }" @click="wok += 1" class="box_book">
+          <div class="book_imgwrap">
+            <img src="https://8.allegroimg.com/s360/031bf4/4b7fe93c447bb3b24a160be81cb8" alt />
+          </div>
+          <p>Wiedza o kulturze SPOTKANIA Z KULTURĄ Podręcznik</p>
+        </div>
+        <div :class="{ box_bookactive : jps = jps % 2 }" @click="jps += 1" class="box_book">
+          <div class="book_imgwrap">
+            <img src="https://a.allegroimg.com/s360/034836/84528bff420dbaf631ddfaa60793" alt />
+          </div>
+          <p>Język polski Świat do przeczytania cz.1</p>
+        </div>
+        <div :class="{ box_bookactive : ps1 = ps1 % 2 }" @click="ps1 += 1" class="box_book">
+          <div class="book_imgwrap">
+            <img src="https://a.allegroimg.com/s360/03743d/bb43213045a7b7be819c312a2d12" alt />
+          </div>
+          <p>PONAD SŁOWAMI 1.2 NOWA ERA</p>
+        </div>
+        <div :class="{ box_bookactive : m1 = m1 % 2 }" @click="m1 += 1" class="box_book">
+          <div class="book_imgwrap">
+            <img src="https://a.allegroimg.com/s360/03a902/f42a3f3d497c9a36c9228ed3a2a7" alt />
+          </div>
+          <p>Matematyka 1. Zakres podstawowy i rozszerzony</p>
+        </div>
+        <div :class="{ box_bookactive : iez = iez % 2 }" @click="iez += 1" class="box_book">
+          <div class="book_imgwrap">
+            <img src="https://a.allegroimg.com/s360/038caf/3d01e4334207a0d4abab32f05576" alt />
+          </div>
+          <p>Informatyka Europejczyka Zakres podstawowy Podr.</p>
+        </div>
+        <div :class="{ box_bookactive : mwo = mwo % 2 }" @click="mwo += 1" class="box_book">
+          <div class="book_imgwrap">
+            <img src="https://e.allegroimg.com/s360/03adbb/a8f0d92142e585e3e9ce1449c41e" alt />
+          </div>
+          <p>MATEMATYKA W OTACZAJĄCYM NAS ŚWIECIE 1 PODSTAWA</p>
+        </div>
+        <div :class="{ box_bookactive : cng = cng % 2 }" @click="cng += 1" class="box_book">
+          <div class="book_imgwrap">
+            <img src="https://a.allegroimg.com/s360/03ccae/e3f6bd3147b98247f8bddb3ab1bb" alt />
+          </div>
+          <p>Czas na geografię Podręcznik Zakres podstawowy</p>
+        </div>
+        <div :class="{ box_bookactive : pp = pp % 2 }" @click="pp += 1" class="box_book">
+          <div class="book_imgwrap">
+            <img src="https://5.allegroimg.com/s360/03b1e2/3c474d744d908b543e20515bce25" alt />
+          </div>
+          <p>Poznać przeszłość Wiek XX Podręcznik</p>
+        </div>
       </div>
     </div>
     <div class="search_customers">
@@ -58,37 +118,251 @@
       </div>
       <div class="customers_box">
         <div class="box_custom">
-          <p>Jan Kowalski</p>
           <ul class="custom_bookbox">
-            <li  :class="{  active_li : bnc = bnc % 2 }" class="custom_book">Biologia na czasie</li>
-          </ul>
-        </div>
-        <div class="box_custom">
-          <p>Jan Kowalski</p>
-          <ul class="custom_bookbox">
+            <li
+              :class="{  active_li : kwp = kwp % 2 }"
+              class="custom_book"
+            >Krok w przedsiębiorczość Podręcznik</li>
+            <li :class="{  active_li : tjc = tjc % 2 }" class="custom_book">To jest chemia</li>
+            <li
+              :class="{  active_li : fof = fof % 2 }"
+              class="custom_book"
+            >Fizyka - ODKRYĆ FIZYKĘ - Nowa Era - podstawowy</li>
+            <li :class="{  active_li : og = og % 2 }" class="custom_book">Oblicza geografii</li>
             <li :class="{  active_li : bnc = bnc % 2 }" class="custom_book">Biologia na czasie</li>
             <li
-              :class="{  active_li : pd = pd % 2 }"
+              :class="{  active_li : szk = szk % 2 }"
+              class="custom_book"
+            >Spotkania z kulturą podręcznik Liceum i technikum</li>
+            <li
+              :class="{  active_li : ps = ps % 2 }"
               class="custom_book"
             >Ponad słowami podręcznik klasa 1 CZ. 1 NOWA ERA</li>
+            <li
+              :class="{  active_li : ie = ie % 2 }"
+              class="custom_book"
+            >Informatyka Europejczyka Podręcznik z płytą CD</li>
             <li :class="{  active_li : wcu = wcu % 2 }" class="custom_book">W centrum uwagi</li>
+            <li
+              :class="{  active_li : sf = sf % 2 }"
+              class="custom_book"
+            >Świat fizyki Podręcznik. Zakres podstawowy</li>
+            <li
+              :class="{  active_li : wok = wok % 2 }"
+              class="custom_book"
+            >Wiedza o kulturze SPOTKANIA Z KULTURĄ Podręcznik</li>
+            <li
+              :class="{  active_li : jps = jps % 2 }"
+              class="custom_book"
+            >Język polski Świat do przeczytania cz.1</li>
+            <li
+              :class="{  active_li : ps1 = ps1 % 2 }"
+              class="custom_book"
+            >PONAD SŁOWAMI 1.2 NOWA ERA</li>
+            <li
+              :class="{  active_li : m1 = m1 % 2 }"
+              class="custom_book"
+            >Matematyka 1. Zakres podstawowy i rozszerzony</li>
+            <li
+              :class="{  active_li : iez = iez % 2 }"
+              class="custom_book"
+            >Informatyka Europejczyka Zakres podstawowy Podr.</li>
+            <li
+              :class="{  active_li : mwo = mwo % 2 }"
+              class="custom_book"
+            >MATEMATYKA W OTACZAJĄCYM NAS ŚWIECIE 1 PODSTAWA</li>
+            <li
+              :class="{  active_li : cng = cng % 2 }"
+              class="custom_book"
+            >Czas na geografię Podręcznik Zakres podstawowy</li>
+            <li
+              :class="{  active_li : pp = pp % 2 }"
+              class="custom_book"
+            >POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA</li>
+            <!-- nowe ksiazki -->
+            <!-- nowe ksiazki -->
+            <!-- nowe ksiazki -->
+            <!-- nowe ksiazki -->
+          </ul>
+        </div>
+
+        <!-- Nowi uzytkownicy  -->
+        <!-- Nowi uzytkownicy  -->
+        <!-- Nowi uzytkownicy  -->
+        <!-- Nowi uzytkownicy  -->
+        <!-- Nowi uzytkownicy  -->
+
+        <div
+          :class="{ box_customactive  : tjc = tjc % 2,box_customactive1 : kwp = kwp % 2,box_customactive2 : wcu = wcu % 2  }"
+          class="box_custom"
+        >
+          <p>Magda magdalena Kamińska</p>
+          <ul class="custom_bookbox">
+            <li
+              :class="{  active_li : kwp = kwp % 2 }"
+              class="custom_book"
+            >Krok w przedsiębiorczość Podręcznik</li>
+            <li :class="{  active_li : tjc = tjc % 2 }" class="custom_book">To jest chemia</li>
+            <li :class="{  active_li : wcu = wcu % 2 }" class="custom_book">W centrum uwagi</li>
+          </ul>
+        </div>
+
+        <div
+          :class="{ box_customactive  : bnc = bnc % 2,box_customactive1 : og = og % 2,box_customactive2 : tjc = tjc % 2,box_customactive3 : pp = pp % 2,box_customactive3 : cng = cng % 2  }"
+          class="box_custom"
+        >
+          <p>Klaudia Karłowska</p>
+          <ul class="custom_bookbox">
             <li :class="{  active_li : og = og % 2 }" class="custom_book">Oblicza geografii</li>
+            <li :class="{  active_li : bnc = bnc % 2 }" class="custom_book">Biologia na czasie</li>
+            <li :class="{  active_li : tjc = tjc % 2 }" class="custom_book">To jest chemia</li>
+            <li :class="{  active_li : cng = cng % 2 }" class="custom_book">Czas na geografię</li>
+            <li
+              :class="{  active_li : pp = pp % 2 }"
+              class="custom_book"
+            >POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA</li>
+          </ul>
+        </div>
+
+        <div
+          :class="{ box_customactive  : bnc = bnc % 2,box_customactive1 : og = og % 2,box_customactive2 : tjc = tjc % 2,box_customactive3 : pp = pp % 2,box_customactive4 : wcu = wcu % 2 }"
+          class="box_custom"
+        >
+          <p>Sylwia szyszko</p>
+          <ul class="custom_bookbox">
+            <li :class="{  active_li : og = og % 2 }" class="custom_book">Oblicza geografii</li>
+            <li :class="{  active_li : bnc = bnc % 2 }" class="custom_book">Biologia na czasie</li>
+            <li :class="{  active_li : tjc = tjc % 2 }" class="custom_book">To jest chemia</li>
+            <li :class="{  active_li : wcu = wcu % 2 }" class="custom_book">W centrum uwagi</li>
+            <li
+              :class="{  active_li : pp = pp % 2 }"
+              class="custom_book"
+            >POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA</li>
+            <li
+              :class="{  active_li : fof = fof % 2 }"
+              class="custom_book"
+            >Fizyka - ODKRYĆ FIZYKĘ - Nowa Era - podstawowy</li>
+          </ul>
+        </div>
+
+        <div
+          :class="{ box_customactive  : bnc = bnc % 2,box_customactive1 : og = og % 2,box_customactive2 : tjc = tjc % 2,box_customactive3 : pp = pp % 2,box_customactive4 : sf = sf % 2,box_customactive5 : fof = fof % 2  }"
+          class="box_custom"
+        >
+          <p>zuzanna jedrzejewska</p>
+          <ul class="custom_bookbox">
+            <li
+              :class="{  active_li : pp = pp % 2 }"
+              class="custom_book"
+            >POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA</li>
+            <li :class="{  active_li : og = og % 2 }" class="custom_book">Oblicza geografii</li>
+            <li :class="{  active_li : tjc = tjc % 2 }" class="custom_book">To jest chemia</li>
+            <li :class="{  active_li : bnc = bnc % 2 }" class="custom_book">Biologia na czasie</li>
             <li
               :class="{  active_li : fof = fof % 2 }"
               class="custom_book"
             >Fizyka - ODKRYĆ FIZYKĘ - Nowa Era - podstawowy</li>
             <li
+              :class="{  active_li : sf = sf % 2 }"
+              class="custom_book"
+            >Świat fizyki Podręcznik. Zakres podstawowy</li>
+          </ul>
+        </div>
+
+        <div
+          :class="{ box_customactive  : bnc = bnc % 2,box_customactive1 : og = og % 2,box_customactive2 : tjc = tjc % 2,box_customactive3 : pp = pp % 2,box_customactive4 : sf = sf % 2,box_customactive5 : kwp = kwp % 2,box_customactive6 : wcu = wcu % 2,box_customactive7 : ps = ps % 2 }"
+          class="box_custom"
+        >
+          <p>Klaudia Arcikiewicz</p>
+          <ul class="custom_bookbox">
+            <li
+              :class="{  active_li : pp = pp % 2 }"
+              class="custom_book"
+            >POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA</li>
+            <li
               :class="{  active_li : kwp = kwp % 2 }"
               class="custom_book"
             >Krok w przedsiębiorczość Podręcznik</li>
+            <li :class="{  active_li : og = og % 2 }" class="custom_book">Oblicza geografii</li>
+            <li :class="{  active_li : tjc = tjc % 2 }" class="custom_book">To jest chemia</li>
+            <li :class="{  active_li : bnc = bnc % 2 }" class="custom_book">Biologia na czasie</li>
+            <li :class="{  active_li : wcu = wcu % 2 }" class="custom_book">W centrum uwagi</li>
+            <li :class="{  active_li : szk = szk % 2 }" class="custom_book">Spotkania z kulturą podręcznik Liceum i technikum</li>
+            <li :class="{  active_li : ps = ps % 2 }" class="custom_book"> PONAD SŁOWAMI 1.2 NOWA ERA</li>
+            <li
+              :class="{  active_li : sf = sf % 2 }"
+              class="custom_book"
+            >Świat fizyki Podręcznik. Zakres podstawowy</li>
           </ul>
         </div>
-        <div class="box_custom">
-          <p>Jan Kowalski</p>
+
+
+        <div
+          :class="{ box_customactive  : bnc = bnc % 2,box_customactive1 : og = og % 2,box_customactive2 : tjc = tjc % 2,box_customactive2 : ps = ps % 2,box_customactive5 : kwp = kwp % 2,box_customactive6 : wcu = wcu % 2,box_customactive7 : ps = ps % 2 }"
+          class="box_custom"
+        >
+          <p>Radosław rakowski</p>
           <ul class="custom_bookbox">
-            <li  :class="{  active_li : bnc = bnc % 2 }" class="custom_book">Biologia na czasie</li>
+              <li
+                :class="{  active_li : kwp = kwp % 2 }"
+                class="custom_book"
+              >Krok w przedsiębiorczość Podręcznik</li>
+              <li :class="{  active_li : og = og % 2 }" class="custom_book">Oblicza geografii</li>
+              <li :class="{  active_li : tjc = tjc % 2 }" class="custom_book">To jest chemia</li>
+              <li :class="{  active_li : bnc = bnc % 2 }" class="custom_book">Biologia na czasie</li>
+              <li :class="{  active_li : wcu = wcu % 2 }" class="custom_book">W centrum uwagi</li>
+              <li :class="{  active_li : szk = szk % 2 }" class="custom_book">Spotkania z kulturą podręcznik Liceum i technikum</li>
+              <li :class="{  active_li : ps = ps % 2 }" class="custom_book"> PONAD SŁOWAMI 1.2 NOWA ERA</li>
+            </ul>
+        </div>
+
+        <div
+          :class="{ box_customactive  : bnc = bnc % 2,box_customactive2 : sf = sf % 2,box_customactive3 : pp = pp % 2,box_customactive5 : kwp = kwp % 2,box_customactive6 : wcu = wcu % 2,box_customactive7 : ps = ps % 2 }"
+          class="box_custom"
+        >
+          <p>Piotrek Dąbrowski</p>
+          <ul class="custom_bookbox">
+            <li
+              :class="{  active_li : kwp = kwp % 2 }"
+              class="custom_book"
+            >Krok w przedsiębiorczość Podręcznik</li>
+              <li
+              :class="{  active_li : sf = sf % 2 }"
+              class="custom_book"
+            >Świat fizyki Podręcznik. Zakres podstawowy</li>
+            <li :class="{  active_li : bnc = bnc % 2 }" class="custom_book">Biologia na czasie</li>
+            <li :class="{  active_li : wcu = wcu % 2 }" class="custom_book">W centrum uwagi</li>
+            <li :class="{  active_li : szk = szk % 2 }" class="custom_book">Spotkania z kulturą podręcznik Liceum i technikum</li>
+             <li
+              :class="{  active_li : pp = pp % 2 }"
+              class="custom_book"
+            >POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA</li>
           </ul>
         </div>
+
+        <div
+          :class="{ box_customactive  : bnc = bnc % 2,box_customactive1  : jps = jps % 2,box_customactive2  : tjc = tjc % 2,box_customactive5 : kwp = kwp % 2,box_customactive6 : wcu = wcu % 2,box_customactive7 : ps = ps % 2 }"
+          class="box_custom"
+        >
+          <p>Piotrek Dąbrowski</p>
+          <ul class="custom_bookbox">
+            <li
+              :class="{  active_li : kwp = kwp % 2 }"
+              class="custom_book"
+            >Krok w przedsiębiorczość Podręcznik</li>
+            <li :class="{  active_li : bnc = bnc % 2 }" class="custom_book">Biologia na czasie</li>
+            <li :class="{  active_li : wcu = wcu % 2 }" class="custom_book">W centrum uwagi</li>
+            <li :class="{  active_li : szk = szk % 2 }" class="custom_book">Spotkania z kulturą podręcznik Liceum i technikum</li>
+            <li :class="{  active_li : jps = jps % 2 }" class="custom_book">Język polski Świat do przeczytania cz.1</li>
+               <li :class="{  active_li : tjc = tjc % 2 }" class="custom_book">To jest chemia</li>
+          </ul>
+        </div>
+
+        <!-- Nowi uzytkownicy  -->
+        <!-- Nowi uzytkownicy  -->
+        <!-- Nowi uzytkownicy  -->
+        <!-- Nowi uzytkownicy  -->
+        <!-- Nowi uzytkownicy  -->
       </div>
     </div>
   </div>
@@ -104,10 +378,20 @@ export default {
       og: 0,
       szk: 0,
       wcu: 0,
-      ps: 0
+      ps: 0,
+      ie: 0,
+      sf: 0,
+      sok: 0,
+      jps: 0,
+      wok: 0,
+      ps1: 0,
+      m1: 0,
+      iez: 0,
+      mwo: 0,
+      cng: 0,
+      pp: 0
     };
-  },
-  methods: {}
+  }
 };
 </script>
 <style>
@@ -174,7 +458,7 @@ export default {
   padding: 20px 100px 100px 100px;
 }
 .box_custom {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   background-color: white;
@@ -182,6 +466,9 @@ export default {
   border: 1px solid rgb(221, 221, 221);
   margin-bottom: 5px;
   cursor: pointer;
+}
+.box_custom:first-of-type {
+  display: flex;
 }
 .custom_bookbox {
   display: flex;
@@ -198,12 +485,28 @@ export default {
   border: 1px solid #16cae6;
   background-color: #16cae659;
 }
-.active_li:nth-of-type(2) {
-  border: 1px solid #e616e6;
-  background-color: #e616e659;
+.box_customactive {
+  display: flex;
 }
-.active_li:nth-of-type(3) {
-  border: 1px solid #e6a816;
-  background-color: #e6a81659;
+.box_customactive1 {
+  display: flex;
+}
+.box_customactive2 {
+  display: flex;
+}
+.box_customactive3 {
+  display: flex;
+}
+.box_customactive4 {
+  display: flex;
+}
+.box_customactive5 {
+  display: flex;
+}
+.box_customactive6 {
+  display: flex;
+}
+.box_customactive7{
+  display: flex;
 }
 </style>

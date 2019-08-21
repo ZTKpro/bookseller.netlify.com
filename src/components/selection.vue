@@ -201,6 +201,13 @@
         <!-- tutaj dodajesz nowych sprzedawców -->
         <!-- tutaj dodajesz nowych sprzedawców -->
 
+                
+            
+
+      
+
+      
+
         <div
           :class="{ box_customactive  : bnc = bnc % 2,box_customactive1 : og = og % 2,box_customactive2 : tjc = tjc % 2,box_customactive3 : pp = pp % 2,box_customactive4 : sf = sf % 2,box_customactive5 : kwp = kwp % 2,box_customactive6 : wcu = wcu % 2,box_customactive7 : ps = ps % 2 }"
           class="box_custom"
@@ -467,6 +474,11 @@ export default {
   height: 100%;
   width: auto;
 }
+
+/* customers */
+/* customers */
+/* customers */
+
 .search_customers {
   background-color: #eceff1;
 }
@@ -519,7 +531,6 @@ export default {
   background-color: #16cae659;
 }
 .box_bookactive {
-  box-shadow: 0px 0px 50px -4px yellow;
   background-color: yellow;
   border: none;
 }
@@ -528,7 +539,7 @@ export default {
 /* change this */
 /* change this */
 
-.box_customactive {
+.box_customactive0 {
   display: flex;
 }
 .box_customactive1 {
@@ -550,6 +561,15 @@ export default {
   display: flex;
 }
 .box_customactive7 {
+  display: flex;
+}
+.box_customactive8 {
+  display: flex;
+}
+.box_customactive9 {
+  display: flex;
+}
+.box_customactive10 {
   display: flex;
 }
 </style>

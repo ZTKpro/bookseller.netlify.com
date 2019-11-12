@@ -8,7 +8,7 @@
 <script>
 import Navigation from "./components/nav.vue";
 import Selection from "./components/selection.vue";
-
+import booklist from './components/booklist.vue';
 export default {
   
   name: "app",
@@ -16,8 +16,18 @@ export default {
     Navigation,
     Selection
   },
+
+  methods:{
+   get: function() {
+       console.log(booklist.props)
+     }
+ },
+ beforeMount(){
+    this.get()
+ },
   data() {
-    return {   }
+    return { 
+      }
   },
 };
 </script>

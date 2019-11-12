@@ -1,9 +1,10 @@
 <template>
   <div>
-    <h1>TEXT:{{...this.book}}</h1>
-    <div class="search_selection">
-      <div class="selection_bookbox">
-        <img class="bookbox_img" v-bind:src="this.book.urlimg" alt="">
+    <h1>TEXT:{{this.book[1].url}}</h1>
+    <div  class="search_selection">
+      <div v-for="(item,value) in book" class="selection_bookbox">
+        <img class="bookbox_img" v-bind:src="item.url" alt="">
+        <p>{{item.tittle}}</p>
       </div>
     </div>
     <div class="search_customers">
@@ -271,57 +272,57 @@ export default {
   return {
     book: [
 
-     {urlimg:'https://a.allegroimg.com/s360/03381c/226a37c7453cb051fc1cb466397b',
+     {url:'https://a.allegroimg.com/s360/03381c/226a37c7453cb051fc1cb466397b',
      tittle:'Krok w przedsiębiorczość Podręcznik'},
         
-     {urlimg:   'https://a.allegroimg.com/s360/03c64b/0e1ff22f4c8aadd1496f585c6c6f',
+     {url:   'https://a.allegroimg.com/s360/03c64b/0e1ff22f4c8aadd1496f585c6c6f',
      tittle:'To jest chemia Podręcznik + CD Zakres podstawowy' },
         
-     {urlimg:  'https://e.allegroimg.com/s360/031e42/e57bbf3c418bb2253e3d4c02bf9e',
+     {url:  'https://e.allegroimg.com/s360/031e42/e57bbf3c418bb2253e3d4c02bf9e',
      tittle:' Fizyka - ODKRYĆ FIZYKĘ - Nowa Era - podstawowy' },
           
-     {urlimg:   'https://4.allegroimg.com/s360/03b874/dd67a6254d81afcf3026e859b634',
+     {url:   'https://4.allegroimg.com/s360/03b874/dd67a6254d81afcf3026e859b634',
      tittle:'Oblicza geografii'},
         
-     {urlimg:  'https://7.allegroimg.com/s360/03fabd/d16f3ff247328422989b421c46f7'
+     {url:  'https://7.allegroimg.com/s360/03fabd/d16f3ff247328422989b421c46f7'
     ,tittle:'Biologia na czasie'},
         
-     {urlimg:'https://a.allegroimg.com/s360/03d23a/da5f8a8241919fde5b2b31a2f01d'
+     {url:'https://a.allegroimg.com/s360/03d23a/da5f8a8241919fde5b2b31a2f01d'
     ,tittle:'Spotkania z kulturą podręcznik Liceum i technikum'},
         
-     {urlimg:  'https://c.allegroimg.com/s360/03385f/696aeb78425b9e9cf19d2dc0d96c '
+     {url:  'https://c.allegroimg.com/s360/03385f/696aeb78425b9e9cf19d2dc0d96c '
     ,tittle:'W centrum uwagi'},
         
-     {urlimg:  'https://6.allegroimg.com/s360/03057a/16b389f241f9b556416f607c8306 '
+     {url:  'https://6.allegroimg.com/s360/03057a/16b389f241f9b556416f607c8306 '
      ,tittle:'Ponad słowami podręcznik klasa 1 CZ. 1 NOWA ERA'},
         
-     {urlimg:  'https://a.allegroimg.com/s360/0385bd/90d9dae842e38c2afde514766cfa '
+     {url:  'https://a.allegroimg.com/s360/0385bd/90d9dae842e38c2afde514766cfa '
      ,tittle:'Informatyka Europejczyka Podręcznik z płytą CD'},
         
-     {urlimg:  'https://a.allegroimg.com/s360/03cb39/784c6d604149a34f395a3c14b1e9 '
+     {url:  'https://a.allegroimg.com/s360/03cb39/784c6d604149a34f395a3c14b1e9 '
      ,tittle:'Świat fizyki Podręcznik. Zakres podstawowy'},
 
-     {urlimg: 'https://8.allegroimg.com/s360/031bf4/4b7fe93c447bb3b24a160be81cb8 '
+     {url: 'https://8.allegroimg.com/s360/031bf4/4b7fe93c447bb3b24a160be81cb8 '
     ,tittle:'Wiedza o kulturze SPOTKANIA Z KULTURĄ Podręcznik'},
 
-     {urlimg:  'https://a.allegroimg.com/s360/034836/84528bff420dbaf631ddfaa60793 '
+     {url:  'https://a.allegroimg.com/s360/034836/84528bff420dbaf631ddfaa60793 '
     ,tittle:'Język polski Świat do przeczytania cz.1'},
         
-     {urlimg:  'https://a.allegroimg.com/s360/03743d/bb43213045a7b7be819c312a2d12 '
+     {url:  'https://a.allegroimg.com/s360/03743d/bb43213045a7b7be819c312a2d12 '
      ,tittle:'PONAD SŁOWAMI 1.2 NOWA ERA'},
 
-    {urlimg:  'https://a.allegroimg.com/s360/03a902/f42a3f3d497c9a36c9228ed3a2a7 '
+    {url:  'https://a.allegroimg.com/s360/03a902/f42a3f3d497c9a36c9228ed3a2a7 '
     ,tittle:'Matematyka 1. Zakres podstawowy i rozszerzony'},
         
-     {urlimg:  'https://a.allegroimg.com/s360/038caf/3d01e4334207a0d4abab32f05576 '
+     {url:  'https://a.allegroimg.com/s360/038caf/3d01e4334207a0d4abab32f05576 '
      ,tittle:'Informatyka Europejczyka Zakres podstawowy Podr.'},
         
-     {urlimg:  'https://e.allegroimg.com/s360/03adbb/a8f0d92142e585e3e9ce1449c41e '
+     {url:  'https://e.allegroimg.com/s360/03adbb/a8f0d92142e585e3e9ce1449c41e '
      ,tittle:'MATEMATYKA W OTACZAJĄCYM NAS ŚWIECIE 1 PODSTAWA'},
-     {urlimg:  'https://a.allegroimg.com/s360/03ccae/e3f6bd3147b98247f8bddb3ab1bb '
+     {url:  'https://a.allegroimg.com/s360/03ccae/e3f6bd3147b98247f8bddb3ab1bb '
      ,tittle:'Czas na geografię Podręcznik Zakres podstawowy'},
         
-     {urlimg:  'https://5.allegroimg.com/s360/03b1e2/3c474d744d908b543e20515bce25 '
+     {url:  'https://5.allegroimg.com/s360/03b1e2/3c474d744d908b543e20515bce25 '
      ,tittle:'Poznać przeszłość Wiek XX Podręcznik'},
      ]
     }
@@ -342,10 +343,12 @@ export default {
   height: 180px;
   width: 180px;
   background-color: rgb(221, 221, 221);
+  margin-top: 10px;
 }
 .bookbox_img{
-  height: 180px;
-  width: 180px;
+  width: 100%;
+  padding: 0px 40px;
+  height:auto;
 }
 /* customers */
 /* customers */

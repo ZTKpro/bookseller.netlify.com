@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="search_selection">
-      <div  v-bind:id="item.id" :key="item.id"  v-for="(item) in books" class="selection_bookbox">
+      <div  v-bind:id="item.id" :key="item.id"  v-for="item in books" class="selection_bookbox">
         <img v-on:click="checkBook" class="bookbox_img" v-bind:src="item.url" alt="">
         <p v-on:click="checkBook" class="bookbox_tittle">{{item.tittle}}</p>
       </div>
@@ -11,99 +11,28 @@
         <h2>Sprzedający</h2>
       </div>
       <div class="customers_box">
-          <ul class="custom_ul">
-            <li
-            
-              class="custom_li"
-            >Krok w przedsiębiorczość Podręcznik</li>
-            <li  class="custom_li">To jest chemia</li>
-            <li
-            
-              class="custom_li"
-            >Fizyka - ODKRYĆ FIZYKĘ - Nowa Era - podstawowy</li>
-            <li class="custom_li">Oblicza geografii</li>
-            <li  class="custom_li">Biologia na czasie</li>
-            <li
-             
-              class="custom_li"
-            >Spotkania z kulturą podręcznik Liceum i technikum</li>
-            <li
-              
-              class="custom_li"
-            >Ponad słowami podręcznik klasa 1 CZ. 1 NOWA ERA</li>
-            <li
-              
-              class="custom_li"
-            >Informatyka Europejczyka Podręcznik z płytą CD</li>
-            <li class="custom_li">W centrum uwagi</li>
-            <li
-             
-              class="custom_li"
-            >Świat fizyki Podręcznik. Zakres podstawowy</li>
-            <li
-              class="custom_li"
-            >Wiedza o kulturze SPOTKANIA Z KULTURĄ Podręcznik</li>
-            <li
-             
-              class="custom_li"
-            >Język polski Świat do przeczytania cz.1</li>
-            <li  class="custom_li">PONAD SŁOWAMI 1.2 NOWA ERA</li>
-            <li
-             
-              class="custom_li"
-            >Matematyka 1. Zakres podstawowy i rozszerzony</li>
-            <li
-              
-              class="custom_li"
-            >Informatyka Europejczyka Zakres podstawowy Podr.</li>
-            <li
-             
-              class="custom_li"
-            >MATEMATYKA W OTACZAJĄCYM NAS ŚWIECIE 1 PODSTAWA</li>
-            <li
-             
-              class="custom_li"
-            >Czas na geografię Podręcznik Zakres podstawowy</li>
-            <li
-              
-              class="custom_li"
-            >POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA</li>
-
-          
+          <ul  class="custom_ul">
+            <li v-for="item in books" :key="item.id"  class="custom_li"> {{item.tittle}} </li>
           </ul>
         </div>
 
-        <div
-          class="box_custom"
-        >
-          <p>Klaudia Arcikiewicz</p>
-       
-            <li
-             
-              class="custom_li"
-            >POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA</li>
-            <li
-      
-              class="custom_li"
-            >Krok w przedsiębiorczość Podręcznik</li>
-            <li  class="custom_li">Oblicza geografii</li>
-            <li class="custom_li">To jest chemia</li>
-            <li class="custom_li">Biologia na czasie</li>
-            <li  class="custom_li">W centrum uwagi</li>
-            <li
-            
-              class="custom_li"
-            >Spotkania z kulturą podręcznik Liceum i technikum</li>
-            <li  class="custom_li">PONAD SŁOWAMI 1.2 NOWA ERA</li>
-            <li
-              
-              class="custom_li"
-            >Świat fizyki Podręcznik. Zakres podstawowy</li>
 
-        
+
+        <div  v-for="(items) in person" :key="items.id"  class="box_custom">
+            <p>{{items.nick}}</p>
+            <ul >
+             <li class="custom_li">{{items.book}}</li>
+             <li class="custom_li">{{items.book1}}</li>
+             <li class="custom_li">{{items.book2}}</li>
+             <li class="custom_li">{{items.book3}}</li>
+             <li class="custom_li">{{items.book4}}</li>
+             <li class="custom_li">{{items.book5}}</li>
+             <li class="custom_li">{{items.book6}}</li>
+             <li class="custom_li">{{items.book7}}</li>
+             <li class="custom_li">{{items.book8}}</li>
+            </ul>
         </div>
-
-        <div
+        <!-- <div
           class="box_custom"
         >
           <p>Radosław rakowski</p>
@@ -198,88 +127,29 @@
             >Świat fizyki Podręcznik. Zakres podstawowy</li>
           </ul>
           
-        </div>
+        </div> -->
 
-        <div
-         
-          class="box_custom"
-        >
-          <p>Piotrek Dąbrowski</p>
-          <ul class="custom_ul">
-            <li
-              
-              class="custom_li"
-            >Krok w przedsiębiorczość Podręcznik</li>
-            <li  class="custom_li">Biologia na czasie</li>
-            <li  class="custom_li">W centrum uwagi</li>
-            <li
-              
-              class="custom_li"
-            >Spotkania z kulturą podręcznik Liceum i technikum</li>
-            <li
-              
-              class="custom_li"
-            >Język polski Świat do przeczytania cz.1</li>
-            <li class="custom_li">To jest chemia</li>
-          </ul>
-          
-        </div>
-
-        <div
-    
-          class="box_custom"
-        >
-          <p>Klaudia Karłowska</p>
-          <ul class="custom_ul">
-            <li  class="custom_li">Oblicza geografii</li>
-            <li  class="custom_li">Biologia na czasie</li>
-            <li  class="custom_li">To jest chemia</li>
-            <li  class="custom_li">Czas na geografię</li>
-            <li
-              
-              class="custom_li"
-            >POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA</li>
-          </ul>
-         
-        </div>
-
-        <div
-
-          class="box_custom"
-        >
-          <p>Magda magdalena Kamińska</p>
-          <ul class="custom_ul">
-            <li
-             
-              class="custom_li"
-            >Krok w przedsiębiorczość Podręcznik</li>
-            <li  class="custom_li">To jest chemia</li>
-            <li  class="custom_li">W centrum uwagi</li>
-          </ul>
-          <p>2</p>
-        </div>
+       <!--  -->
       </div>
     </div>
 </template>
 <script>
 import bookJson from './bookList.json'
-export default {
-  data() {
-  return {
-    books: bookJson,
-    user:[
-      {name:'Klaudia Arcikiewicz', 
-      book:'',
-      }
-     ]
+import person1 from './user/userList.json'
 
-  }
+export default {
+    data() {
+      return {
+        books: bookJson,
+        person: person1,
+      }
     },
     methods: {
       checkBook: function(e) {
-        const li = [...document.querySelectorAll('.custom_li')]
+      const li = [...document.querySelectorAll('.custom_li')]
         const current = e.target.parentElement.textContent
         let result = li;
+        console.log(result[1].textContent)
 
         result = result.filter(li => li.textContent.includes(current));
         
@@ -295,8 +165,23 @@ export default {
       },
       addBoxShadow: function(e){
       e.target.parentElement.style.boxShadow = "0px 0px 35px blue";
-      }
+      },
+      deletedCustom: function(){
+        const li = [...document.querySelectorAll('.custom_li')]
+        let result = li;
+        console.log(result)
+        for (let i = 0; i < result.length; i++) {
+          let c = result[i];
+          console.log(c.textContent)
+          if(c.textContent == ''){
+           c.style.display = "none";
+          }
+        }
+      },
     },
+    mounted: function() {
+      this.deletedCustom()
+    }
 };
 </script>
 <style>

@@ -1,0 +1,61 @@
+[
+    {
+        "nick": "Klaudia Arcikiewicz",
+        "books":[
+            "POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA",
+            " Krok w przedsiębiorczość Podręcznik",
+            "Oblicza geografii",
+            "To jest chemia",
+            "Biologia na czasie",
+            "W centrum uwagi",
+            "Spotkania z kulturą podręcznik Liceum i technikum",
+            "PONAD SŁOWAMI 1.2 NOWA ERA",
+            "Świat fizyki Podręcznik. Zakres podstawowy"
+        ] 
+    },
+    {
+        "nick": "Radosław rakowski",
+        "books": [
+         "Krok w przedsiębiorczość Podręcznik",
+         "Oblicza geografii",
+         "To jest chemia",
+         "Biologia na czasie",
+         "W centrum uwagi",
+         "Spotkania z kulturą podręcznik Liceum i technikum",
+         "PONAD SŁOWAMI 1.2 NOWA ERA"
+        ]
+    },
+    {
+        "nick": "Sylwia szyszko",
+        "books": [
+            "Oblicza geografii",
+            "Biologia na czasie",
+            "To jest chemia",
+            "W centrum uwagi" ,
+            "POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA",
+            "Fizyka - ODKRYĆ FIZYKĘ - Nowa Era - podstawowy" 
+        ]
+    },
+    {
+        "nick": "Piotrek Dąbrowski",
+        "books": [
+            "Krok w przedsiębiorczość Podręcznik",
+            "Świat fizyki Podręcznik. Zakres podstawowy",
+            "Biologia na czasie",
+            "W centrum uwagi",
+            "Spotkania z kulturą podręcznik Liceum i technikum",
+            "POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA"
+        ]
+    },
+    {
+        "nick": "Zuzanna Jedrzejewska",
+        "books": [
+            "POZNAĆ PRZESZŁOŚĆ WIEK XX PODRĘCZNIK NOWA ERA",
+            "Oblicza geografii",
+            "To jest chemia",
+            "Biologia na czasie",
+            "Fizyka - ODKRYĆ FIZYKĘ - Nowa Era - podstawowy",
+            "Świat fizyki Podręcznik. Zakres podstawowy"
+        ]
+    }
+]

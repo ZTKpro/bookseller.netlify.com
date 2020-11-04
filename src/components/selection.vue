@@ -1,9 +1,19 @@
 <template>
   <div>
     <div class="search_selection">
-      <div  v-bind:id="item.id" :key="item.id"  v-for="item in books" class="selection_bookbox">
-        <img v-on:click="checkBook" class="bookbox_img" v-bind:src="item.url" alt="imges book">
-        <p v-on:click="checkBook" class="bookbox_tittle">{{item.tittle}}</p>
+      <div
+        v-bind:id="item.id"
+        :key="item.id"
+        v-for="item in books"
+        class="selection_bookbox"
+      >
+        <img
+          v-on:click="checkBook"
+          class="bookbox_img"
+          v-bind:src="`${item.url}`"
+          alt="imges book"
+        />
+        <p v-on:click="checkBook" class="bookbox_tittle">{{ item.tittle }}</p>
       </div>
     </div>
     <div class="search_seller">
@@ -11,65 +21,65 @@
         <h2>Sprzedający</h2>
       </div>
 
-        <div  v-for="(items) in person" :key="items.id"  class="box_seller">
-            <p>{{items.nick}}</p>
-            <ul class="seller_ul">
-             <li  v-for="list in items.books" :key="list.id" class="seller_li">
-               {{list}}</li>
-               </ul>
-        </div>
+      <div v-for="items in person" :key="items.id" class="box_seller">
+        <p>{{ items.nick }}</p>
+        <ul class="seller_ul">
+          <li v-for="list in items.books" :key="list.id" class="seller_li">
+            {{ list }}
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
 </template>
 <script>
-
-import bookJson from './jsonFiles/bookList.json'
-import person1 from './jsonFiles/userList.json'
+import bookJson from "./jsonFiles/bookList.json";
+import person1 from "./jsonFiles/userList.json";
 
 export default {
-    data() {
-      return {
-        books: bookJson,
-        person: person1,
-      }
-    },
-    methods: {
-      checkBook: function(e) {
-        const li = [...document.querySelectorAll('.seller_li')]
-          const current = e.target.parentElement.textContent
-          let result = li;
-          console.log(result[1].textContent)
+  data() {
+    return {
+      books: bookJson,
+      person: person1,
+    };
+  },
+  methods: {
+    checkBook: function(e) {
+      const li = [...document.querySelectorAll(".seller_li")];
+      const current = e.target.parentElement.textContent;
+      let result = li;
+      console.log(result[1].textContent);
 
-          result = result.filter(li => li.textContent.includes(current));
-          
-          for (let i = 0; i < result.length; i++) {
-            let c = result[i];
-            c.style.backgroundColor = "rgb(142, 181, 253)";
-            let parent = c.parentElement 
-            if(parent.parentElement.classList == 'box_seller'){
-              parent.parentElement.style.display = 'flex';
-            }
-          }
-          this.addBoxShadow(e)
-      },
-      addBoxShadow: function(e){
-        e.target.parentElement.style.boxShadow = "0px 0px 35px rgb(142, 181, 253)";
-      },
+      result = result.filter((li) => li.textContent.includes(current));
+
+      for (let i = 0; i < result.length; i++) {
+        let c = result[i];
+        c.style.backgroundColor = "rgb(142, 181, 253)";
+        let parent = c.parentElement;
+        if (parent.parentElement.classList == "box_seller") {
+          parent.parentElement.style.display = "flex";
+        }
+      }
+      this.addBoxShadow(e);
     },
+    addBoxShadow: function(e) {
+      e.target.parentElement.style.boxShadow =
+        "0px 0px 35px rgb(142, 181, 253)";
+    },
+  },
 };
 </script>
 <style>
-
 .search_selection {
   height: 100%;
   width: 100vw;
   background-color: #eceff1;
   padding: 15px 100px;
-   display: flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.selection_bookbox{
+.selection_bookbox {
   height: 180px;
   width: 180px;
   background-color: rgb(199, 199, 199);
@@ -77,13 +87,13 @@ export default {
   margin-bottom: 25px;
   cursor: pointer;
 }
-.bookbox_img{
+.bookbox_img {
   width: auto;
   padding: 0px 40px;
-  height:120px;
+  height: 120px;
 }
-.bookbox_tittle{
-  display:flex;
+.bookbox_tittle {
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
